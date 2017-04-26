@@ -1,0 +1,45 @@
+header,
+footer {
+  background: #c5c5c5;
+}
+.container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: auto;
+  min-height: 100%;
+}
+.container > * {
+  padding: 0 20px;
+}
+main {
+  display: -webkit-box;
+  display: flex;
+  margin-bottom: auto;
+}
+@media screen and (max-width: 768px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    flex-direction: column-reverse;
+  }
+}
+main aside {
+  margin-right: 40px;
+}
+body,
+html {
+  height: 100%;
+  font-family: sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,33 @@
+.container
+	width: 1000px
+	margin: auto
+	// background: #e3e3e3
+.column
+	display: flex
+	&:not(:last-child)
+		margin-bottom: 20px
+	+e(box)
+		padding: 20px
+		border: 1px solid #cecece
+
+	+e(item)
+		flex: 1
+		// padding: 10px
+
+	+m(2)
+		width: 16.66667%
+		flex: none
+	
+	+m(4)
+		width: 33.3333%
+		flex: none
+
+	+m(6)
+		width: 50%
+		flex: none
+
+	+m(is-narrow)
+		flex: none
+
+	+m(is-multiline)
+		flex-wrap: wrap

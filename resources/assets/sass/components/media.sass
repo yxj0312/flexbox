@@ -1,0 +1,33 @@
+body
+	display: flex
+	max-width: 500px
+	margin:auto
+	align-items: center
+	justify-content: center
+	
+
+.media
+	display: flex
+	width: 100%
+
+	+m(box)
+		border: 1px solid #cecece
+		padding: 20px
+
+	+e(left)
+		margin-right: 1em
+
+	+e(content)
+		flex: 1
+		p
+			width: 100%
+		textarea
+			width: 100%
+			min-height: 100px
+			border-color: #cecece
+		form
+			display: flex
+			flex-direction: column
+
+	+e(buttons)
+		align-self: flex-end
